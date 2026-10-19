@@ -5,11 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lang &amp; Vaz Advocacia</title>
   <meta name="description" content="Escritório de advocacia com enfoque na recuperação de créditos para construtoras, condomínios e associações civis, bem como na representação judicial e extrajudicial de credores de sociedades empresárias em recuperação judicial.">
-  <link rel="icon" href="https://lvadvocacia.com.br/wp-content/uploads/2024/05/share-img-adv.png">
+  <meta name="theme-color" content="#0c334b">
+  <link rel="canonical" href="https://lvadvocacia.com.br/">
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+  <link rel="apple-touch-icon" href="imagens/apple-touch-icon.png">
+
+  <!-- Prévia ao compartilhar o link (WhatsApp, LinkedIn, Facebook). Os endereços precisam ser absolutos. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Lang &amp; Vaz Advocacia">
+  <meta property="og:title" content="Lang &amp; Vaz Advocacia">
+  <meta property="og:description" content="Recuperação de créditos, Direito Imobiliário, Recuperacional e Tributário. Mais de 20 anos de experiência em Porto Alegre.">
+  <meta property="og:url" content="https://lvadvocacia.com.br/">
+  <meta property="og:image" content="https://lvadvocacia.com.br/imagens/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="imagens/hero.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Lang & Vaz Advocacia",
+    "url": "https://lvadvocacia.com.br/",
+    "logo": "https://lvadvocacia.com.br/imagens/apple-touch-icon.png",
+    "image": "https://lvadvocacia.com.br/imagens/og-image.jpg",
+    "email": "escritorio@lvadvocacia.com.br",
+    "telephone": "+55 51 3012-0219",
+    "areaServed": ["RS", "SC"],
+    "knowsAbout": ["Direito Imobiliário", "Direito Recuperacional", "Direito Tributário", "Recuperação de créditos"]
+  }
+  </script>
 </head>
 <body>
 
@@ -27,7 +59,7 @@
         <a href="#topo">Home</a>
         <a href="#quem-somos">Quem Somos</a>
         <a href="#areas-de-atuacao">Áreas de Atuação</a>
-        <a href="#equipe">Equipe</a>
+        <a href="#equipe">Sócios</a>
         <a href="#clientes">Clientes</a>
         <a class="nav-cta" href="#contato">Contato</a>
       </nav>
@@ -39,11 +71,6 @@
     <!-- Abertura. Imagem de fundo: imagens/hero.webp (definida no style.css) -->
     <section class="hero" id="topo">
       <div class="wrap hero-inner">
-        <p class="hero-motto" lang="la">
-          <span>Honeste vivere,</span>
-          <span>alterum non laedere,</span>
-          <span class="hero-motto-key">suum cuique tribuere.</span>
-        </p>
         <div class="hero-text">
           <h1>Lang &amp; Vaz Advocacia</h1>
           <p>OAB/RS 3.973</p>
@@ -61,7 +88,7 @@
       </div>
     </section>
 
-    <!-- Faixa de imagem 1: imagens/banner-1.webp (definida no style.css) -->
+    <!-- Faixa de imagem 1: imagens/wallpaper-2.webp (definida no style.css) -->
     <div class="banner banner-1" role="presentation"></div>
 
     <!-- Áreas de Atuação -->
@@ -70,48 +97,65 @@
         <h2>Áreas de Atuação</h2>
 
         <article class="area" id="direito-imobiliario">
-          <h3>Direito Imobiliário</h3>
-          <div class="area-body">
-            <p>Assessoramento jurídico na aquisição, venda, permuta, doação, locação e financiamento, urbanização, construção e regularização registral de bens imóveis, bem como na administração de condomínios habitacionais.</p>
-            <p>Elaboração de notificações e contratos imobiliários e representação judicial e extrajudicial em ações envolvendo cobrança e execução de títulos executivos judiciais e extrajudiciais, direitos reais, posse e propriedade.</p>
+          <figure class="area-media">
+            <img src="imagens/imobiliario.webp" alt="Edifícios residenciais modernos" width="1020" height="680" loading="lazy">
+          </figure>
+          <div class="area-text">
+            <h3>Direito Imobiliário</h3>
+            <div class="area-body">
+              <p>Assessoramento jurídico na aquisição, venda, permuta, doação, locação e financiamento, urbanização, construção e regularização registral de bens imóveis, bem como na administração de condomínios habitacionais.</p>
+              <p>Elaboração de notificações e contratos imobiliários e representação judicial e extrajudicial em ações envolvendo cobrança e execução de títulos executivos judiciais e extrajudiciais, direitos reais, posse e propriedade.</p>
+            </div>
           </div>
         </article>
 
         <article class="area" id="direito-recuperacional">
-          <h3>Direito Recuperacional</h3>
-          <div class="area-body">
-            <p>Assessoramento jurídico em processos de recuperação judicial, recuperação extrajudicial e incidentes processuais relacionados (habilitação, objeção ou impugnação judicial, recuperação de crédito e ativos, entre outros expedientes relacionados à Lei 11.101/05).</p>
+          <figure class="area-media">
+            <img src="imagens/recuperacional.webp" alt="Sala de reuniões corporativa" width="1020" height="680" loading="lazy">
+          </figure>
+          <div class="area-text">
+            <h3>Direito Recuperacional</h3>
+            <div class="area-body">
+              <p>Assessoramento jurídico em processos de recuperação judicial, recuperação extrajudicial e incidentes processuais relacionados (habilitação, objeção ou impugnação judicial, recuperação de crédito e ativos, entre outros expedientes relacionados à Lei 11.101/05).</p>
+            </div>
           </div>
         </article>
 
         <article class="area" id="direito-tributario">
-          <h3>Direito Tributário</h3>
-          <div class="area-body">
-            <p>Elaboração de pareceres jurídicos, apresentação de defesas administrativas e judiciais, representação para propositura de ações judiciais e procedimentos extrajudiciais visando a declaração de inexigibilidade de tributos, a repetição de indébito tributário, além da realização dos procedimentos legais necessários para a obtenção de certidões negativas ou positivas com efeito de negativa (CNDs e CPENs), bem como orientação e acompanhamento para adesão a parcelamentos tributários.</p>
+          <figure class="area-media">
+            <img src="imagens/tributario.webp" alt="Profissionais revisando planilhas e cálculos" width="1020" height="680" loading="lazy">
+          </figure>
+          <div class="area-text">
+            <h3>Direito Tributário</h3>
+            <div class="area-body">
+              <p>Elaboração de pareceres jurídicos, apresentação de defesas administrativas e judiciais, representação para propositura de ações judiciais e procedimentos extrajudiciais visando a declaração de inexigibilidade de tributos, a repetição de indébito tributário, além da realização dos procedimentos legais necessários para a obtenção de certidões negativas ou positivas com efeito de negativa (CNDs e CPENs), bem como orientação e acompanhamento para adesão a parcelamentos tributários.</p>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Faixa de imagem 2: imagens/banner-2.webp (definida no style.css) -->
+    <!-- Faixa de imagem 2: imagens/wallpaper-3.webp (definida no style.css) -->
     <div class="banner banner-2" role="presentation"></div>
 
     <!-- Nossa Equipe -->
     <section class="section team" id="equipe">
       <div class="wrap team-grid">
-        <h2>Nossa Equipe</h2>
+        <h2>Sócios</h2>
         <div class="partners">
           <article class="partner">
-            <!-- Para usar a foto: troque o <div class="partner-photo ..."> por
-                 <img class="partner-photo" src="imagens/leandro.jpg" alt="Leandro Lang"> -->
-            <div class="partner-photo partner-ph" aria-hidden="true">L</div>
+            <figure class="partner-media">
+              <img class="partner-photo" src="imagens/leandro.webp" alt="Leandro Lang" width="112" height="112" loading="lazy">
+            </figure>
             <div>
               <h3>Leandro Lang</h3>
               <p>OAB/RS 51.782<br>OAB/SC 41.220-A</p>
             </div>
           </article>
           <article class="partner">
-            <div class="partner-photo partner-ph" aria-hidden="true">V</div>
+            <figure class="partner-media">
+              <img class="partner-photo" src="imagens/anelise.webp" alt="Anelise Burke Vaz" width="112" height="112" loading="lazy">
+            </figure>
             <div>
               <h3>Anelise Burke Vaz</h3>
               <p>OAB/RS 81.220</p>
@@ -126,30 +170,34 @@
       <div class="wrap">
         <h2>Nossos Clientes</h2>
       </div>
-      <!-- Carrossel de logos. Os quadrados coloridos são provisórios.
-           Para usar os logos reais, troque cada <li class="logo-ph" ...></li> por:
-           <li><img src="logos/nome.png" alt="Nome do cliente"></li>
-           Faça a mesma troca nas DUAS listas: a segunda é uma cópia que deixa o giro contínuo. -->
+      <!-- Carrossel de logos (imagens/companies). Para incluir um cliente, adicione um <li> nas DUAS listas:
+           a segunda é uma cópia que deixa o giro contínuo. -->
       <div class="marquee">
         <ul class="logos">
-          <li class="logo-ph" style="--c: #c9a46a"></li>
-          <li class="logo-ph" style="--c: #5b7f95"></li>
-          <li class="logo-ph" style="--c: #9c5c4a"></li>
-          <li class="logo-ph" style="--c: #6e8b6a"></li>
-          <li class="logo-ph" style="--c: #3f4e8c"></li>
-          <li class="logo-ph" style="--c: #b98b9e"></li>
-          <li class="logo-ph" style="--c: #7a6a58"></li>
-          <li class="logo-ph" style="--c: #4b9a9a"></li>
+          <li><img src="imagens/companies/mlf.webp" alt="MLF Engenharia e Projetos"></li>
+          <li><img src="imagens/companies/belltoy.webp" alt="Bell Toy"></li>
+          <li><img src="imagens/companies/baybridge.webp" alt="Baybridge Brasil"></li>
+          <li><img src="imagens/companies/canto-verde.webp" alt="Canto Verde"></li>
+          <li><img src="imagens/companies/concretos-carvalho.webp" alt="Concretos Carvalho"></li>
+          <li><img src="imagens/companies/rl-construcoes.webp" alt="RL Construções Ltda."></li>
+          <li><img src="imagens/companies/estoril.webp" alt="Estoril Postos"></li>
+          <li><img src="imagens/companies/lucas-miller.webp" alt="Lucas &amp; Miller Administração Imobiliária"></li>
+          <li><img src="imagens/companies/rocave.webp" alt="Rocave Empreendimentos"></li>
+          <li><img src="imagens/companies/semara.webp" alt="Semara Engenharia e Construções Ltda."></li>
+          <li><img src="imagens/companies/veja.webp" alt="Veja Engenharia"></li>
         </ul>
         <ul class="logos" aria-hidden="true">
-          <li class="logo-ph" style="--c: #c9a46a"></li>
-          <li class="logo-ph" style="--c: #5b7f95"></li>
-          <li class="logo-ph" style="--c: #9c5c4a"></li>
-          <li class="logo-ph" style="--c: #6e8b6a"></li>
-          <li class="logo-ph" style="--c: #3f4e8c"></li>
-          <li class="logo-ph" style="--c: #b98b9e"></li>
-          <li class="logo-ph" style="--c: #7a6a58"></li>
-          <li class="logo-ph" style="--c: #4b9a9a"></li>
+          <li><img src="imagens/companies/mlf.webp" alt=""></li>
+          <li><img src="imagens/companies/belltoy.webp" alt=""></li>
+          <li><img src="imagens/companies/baybridge.webp" alt=""></li>
+          <li><img src="imagens/companies/canto-verde.webp" alt=""></li>
+          <li><img src="imagens/companies/concretos-carvalho.webp" alt=""></li>
+          <li><img src="imagens/companies/rl-construcoes.webp" alt=""></li>
+          <li><img src="imagens/companies/estoril.webp" alt=""></li>
+          <li><img src="imagens/companies/lucas-miller.webp" alt=""></li>
+          <li><img src="imagens/companies/rocave.webp" alt=""></li>
+          <li><img src="imagens/companies/semara.webp" alt=""></li>
+          <li><img src="imagens/companies/veja.webp" alt=""></li>
         </ul>
       </div>
     </section>
@@ -159,11 +207,11 @@
       <div class="wrap contact-grid">
         <div>
           <h2>Entre em contato e agende seu atendimento</h2>
-          <a class="btn btn-light" href="https://wa.me/555130120219?text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site+Lang+%26+Vaz.+" target="_blank" rel="noopener">Clique aqui</a>
+          <a class="btn btn-light" href="https://wa.me/555130120219?text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site+Lang+%26+Vaz.+" target="_blank" rel="noopener" aria-label="Clique aqui para conversar pelo WhatsApp"><svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Clique aqui</a>
         </div>
         <ul class="contact-list">
-          <li><a href="mailto:escritorio@lvadvocacia.com.br">escritorio@lvadvocacia.com.br</a></li>
-          <li><a href="https://wa.me/555130120219?text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site+Lang+%26+Vaz.+" target="_blank" rel="noopener">(51) 3012-0219</a></li>
+          <li><span class="contact-label">E-mail</span><a href="mailto:escritorio@lvadvocacia.com.br">escritorio@lvadvocacia.com.br</a></li>
+          <li><span class="contact-label">Telefone e WhatsApp</span><a href="https://wa.me/555130120219?text=Ol%C3%A1%2C+estou+entrando+em+contato+atrav%C3%A9s+do+site+Lang+%26+Vaz.+" target="_blank" rel="noopener">(51) 3012-0219</a></li>
         </ul>
       </div>
     </section>
@@ -179,9 +227,9 @@
         <h2>Institucional</h2>
         <ul>
           <li><a href="#topo">Home</a></li>
-          <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
           <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
+          <li><a href="#equipe">Sócios</a></li>
           <li><a href="#clientes">Clientes</a></li>
         </ul>
       </nav>
@@ -202,7 +250,8 @@
       </div>
     </div>
     <div class="wrap footer-inner">
-      <p>Lang &amp; Vaz Advocacia - Todos os direitos reservados <span id="ano">2026</span></p>
+      <p>© <span id="ano">2026</span> Lang &amp; Vaz Advocacia · OAB/RS 3.973</p>
+      <p>Todos os direitos reservados</p>
     </div>
   </footer>
 
@@ -213,12 +262,44 @@
     toggle.addEventListener('click', () => {
       const open = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!open));
+      toggle.textContent = open ? 'Menu' : 'Fechar';
       nav.classList.toggle('is-open', !open);
     });
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    const closeMenu = () => {
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = 'Menu';
       nav.classList.remove('is-open');
-    }));
+    };
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // Cabeçalho ganha uma sombra discreta depois que a página rola
+    const header = document.querySelector('.site-header');
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Revelação suave dos blocos ao entrarem na tela (sem JS, tudo aparece normalmente)
+    // Confere a posição a cada rolagem: tudo o que já passou do pé da tela aparece, mesmo com rolagem rápida
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      let pending = [...document.querySelectorAll('.section h2, .about-body, .area, .partner, .marquee, .contact-grid > *')];
+      pending.forEach(el => el.classList.add('reveal'));
+      let ticking = false;
+      const reveal = () => {
+        ticking = false;
+        const limit = window.innerHeight * 0.92;
+        pending = pending.filter(el => {
+          if (el.getBoundingClientRect().top < limit) { el.classList.add('is-in'); return false; }
+          return true;
+        });
+        if (!pending.length) window.removeEventListener('scroll', onReveal);
+      };
+      const onReveal = () => { if (!ticking) { ticking = true; requestAnimationFrame(reveal); } };
+      window.addEventListener('scroll', onReveal, { passive: true });
+      window.addEventListener('resize', onReveal);
+      reveal();
+    }
+
     document.getElementById('ano').textContent = new Date().getFullYear();
   </script>
 </body>

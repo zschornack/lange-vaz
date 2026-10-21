@@ -253,7 +253,7 @@ img { max-width: 100%; display: block; }
 
 .area {
   display: grid;
-  grid-template-columns: 4fr 7fr;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
   gap: 32px clamp(32px, 6vw, 96px);
   align-items: start;
   padding: clamp(32px, 4vw, 48px) 0;
@@ -271,23 +271,36 @@ img { max-width: 100%; display: block; }
           hyphens: auto;
 }
 
-/* Ícone de linha num quadrado azul, com o título ao lado */
+/* Quadro azul com o ícone branco, da altura do texto ao lado,
+   e um filete de latão deslocado por trás. Título em duas linhas ao lado. */
 .area-head {
+  align-self: stretch;
+  isolation: isolate;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: clamp(20px, 2.4vw, 32px);
 }
 .area-head h3 { margin: 0; }
 .area-icon {
+  position: relative;
   flex: 0 0 auto;
+  align-self: stretch;
   display: grid;
   place-items: center;
-  width: 72px;
-  height: 72px;
+  width: clamp(112px, 11vw, 148px);
+  min-height: 112px;
+  margin-right: 12px;
   background: var(--ink);
-  color: var(--brass-light);
+  color: #fff;
 }
-.area-icon svg { width: 48px; height: 48px; }
+.area-icon::before {
+  content: "";
+  position: absolute;
+  inset: 12px -12px -12px 12px;
+  border: 1px solid var(--brass);
+  z-index: -1;
+}
+.area-icon svg { width: 68px; height: 68px; }
 
 /* Equipe: foto pequena com nome e OAB ao lado */
 .team-grid {
@@ -527,8 +540,10 @@ img { max-width: 100%; display: block; }
   .contact-grid,
   .team-grid { grid-template-columns: 1fr; }
   .partner-photo { width: 88px; height: 88px; }
-  .area-icon { width: 60px; height: 60px; }
-  .area-icon svg { width: 40px; height: 40px; }
+  .area-head { align-self: auto; }
+  .area-icon { width: 88px; min-height: 0; height: 88px; margin: 0 10px 10px 0; }
+  .area-icon::before { inset: 10px -10px -10px 10px; }
+  .area-icon svg { width: 52px; height: 52px; }
 
   .logos li { width: 160px; padding: 16px; }
   .logos img { max-height: 56px; }

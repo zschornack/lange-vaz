@@ -275,7 +275,15 @@
 
     // Cabeçalho ganha uma sombra discreta depois que a página rola
     const header = document.querySelector('.site-header');
-    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    // Se o menu do celular estiver aberto, fecha assim que a pessoa começa a rolar a página
+    let menuOpenedAt = null;
+    new MutationObserver(() => {
+      menuOpenedAt = nav.classList.contains('is-open') ? window.scrollY : null;
+    }).observe(nav, { attributes: true, attributeFilter: ['class'] });
+    const onScroll = () => {
+      header.classList.toggle('is-scrolled', window.scrollY > 8);
+      if (menuOpenedAt !== null && Math.abs(window.scrollY - menuOpenedAt) > 12) closeMenu();
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 

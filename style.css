@@ -281,6 +281,7 @@ img { max-width: 100%; display: block; }
   gap: clamp(20px, 2.4vw, 32px);
 }
 .area-head h3 { margin: 0; }
+.area-head h3 strong { font-weight: 600; }
 .area-icon {
   position: relative;
   flex: 0 0 auto;

@@ -376,6 +376,9 @@ img { max-width: 100%; display: block; }
 }
 
 /* Clientes */
+/* Coordenação e Clientes ficam mais próximas: meio respiro de cada lado da linha divisória */
+.section.team { padding-bottom: calc(var(--section) * .5); }
+.section.clients { padding-top: calc(var(--section) * .5); }
 .clients { border-top: 1px solid var(--line); }
 .clients h2 { margin-bottom: clamp(40px, 5vw, 64px); }
 /* Carrossel contínuo de logos: duas listas iguais deslizando lado a lado */

@@ -320,7 +320,7 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--line);
 }
 .partner:last-child { border-bottom: 1px solid var(--line); }
-/* Foto quadrada com o mesmo filete de latão deslocado das áreas de atuação */
+/* Foto redonda com o mesmo filete de latão deslocado das áreas de atuação */
 .partner-media {
   position: relative;
   flex: 0 0 auto;
@@ -331,13 +331,16 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 8px -8px -8px 8px;
   border: 1px solid var(--brass);
+  border-radius: 50%;
   transition: inset .5s var(--ease);
 }
 .partner-photo {
   position: relative;
   display: block;
-  width: 112px;
-  height: 112px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(12, 51, 75, .14); /* contorno discreto para fotos de fundo claro */
   object-fit: cover;
   filter: saturate(.85);
   transition: filter .5s;
@@ -553,7 +556,7 @@ img { max-width: 100%; display: block; }
   .area,
   .contact-grid,
   .team-grid { grid-template-columns: 1fr; }
-  .partner-photo { width: 88px; height: 88px; }
+  .partner-photo { width: 100px; height: 100px; }
   .area-head { align-self: auto; }
   .area-icon { width: 88px; min-height: 0; height: 88px; margin: 0 10px 10px 0; }
   .area-icon::before { inset: 10px -10px -10px 10px; }
